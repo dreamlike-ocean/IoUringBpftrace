@@ -1,0 +1,6 @@
+
+tracepoint:io_uring:io_uring_poll_arm
+{
+     printf("{\"event\": \"POLL_ARM\", \"ops\": \"%s\", \"mask\": %d, \"events\": %d,\"nsecs\":%lld}\n",
+           str(args->op_str), args->mask, args->events,nsecs);
+}

@@ -1,0 +1,231 @@
+{
+  "reflection": [
+    {
+      "type": "com.fasterxml.jackson.databind.ext.Java7SupportImpl",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.AbstractTraceEvent",
+      "allDeclaredFields": true,
+      "methods": [
+        {
+          "name": "setEvent",
+          "parameterTypes": [
+            "io.github.dreamlike.bpf.TraceEventType"
+          ]
+        },
+        {
+          "name": "setNsecs",
+          "parameterTypes": [
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.AsyncWorkTraceEvent",
+      "allDeclaredFields": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setFlags",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setOps",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setUserData",
+          "parameterTypes": [
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.CompleteCqeTraceEvent",
+      "allDeclaredFields": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setRes",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setUserData",
+          "parameterTypes": [
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.CqeOverflowTraceEvent",
+      "allDeclaredFields": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setUserData",
+          "parameterTypes": [
+            "long"
+          ]
+        },
+        {
+          "name": "setRes",
+          "parameterTypes": [
+            "int"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.PollArmTraceEvent",
+      "allDeclaredFields": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setEvents",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setMask",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setOps",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.SubmitSqeTraceEvent",
+      "allDeclaredFields": true,
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        },
+        {
+          "name": "setFlags",
+          "parameterTypes": [
+            "int"
+          ]
+        },
+        {
+          "name": "setOps",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        },
+        {
+          "name": "setUserData",
+          "parameterTypes": [
+            "long"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "io.github.dreamlike.bpf.TraceEventType",
+      "allDeclaredFields": true
+    },
+    {
+      "type": "java.util.concurrent.ForkJoinTask",
+      "fields": [
+        {
+          "name": "aux"
+        },
+        {
+          "name": "status"
+        }
+      ]
+    },
+    {
+      "type": "jdk.internal.misc.Unsafe"
+    },
+    {
+      "type": "sun.security.provider.NativePRNG",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": [
+            "java.security.SecureRandomParameters"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sun.security.provider.SHA",
+      "methods": [
+        {
+          "name": "<init>",
+          "parameterTypes": []
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "glob": "META-INF/services/java.lang.System$LoggerFinder"
+    },
+    {
+      "glob": "traceBT/trace_async_work.bt"
+    },
+    {
+      "glob": "traceBT/trace_complete_cqe.bt"
+    },
+    {
+      "glob": "traceBT/trace_cqe_overflow.bt"
+    },
+    {
+      "glob": "traceBT/trace_poll_arm.bt"
+    },
+    {
+      "glob": "traceBT/trace_submit_sqe.bt"
+    }
+  ],
+  "bundles": [],
+  "jni": [
+    {
+      "type": "java.lang.Boolean",
+      "methods": [
+        {
+          "name": "getBoolean",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    }
+  ]
+}

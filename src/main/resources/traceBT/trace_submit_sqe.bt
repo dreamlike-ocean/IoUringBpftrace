@@ -1,0 +1,6 @@
+
+// 有些内核是这个 有些是io_uring_submit_req
+tracepoint:io_uring:io_uring_submit_sqe
+{
+    printf("{\"event\":\"SUBMIT_SQE\",\"userData\":%d,\"flags\":%d,\"ops\":\"%s\",\"nsecs\":%lld}\n", args->user_data, args->flags, str(args->op_str),nsecs);
+}

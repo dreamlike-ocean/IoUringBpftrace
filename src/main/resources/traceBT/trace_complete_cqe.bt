@@ -1,0 +1,5 @@
+
+tracepoint:io_uring:io_uring_complete
+{
+    printf("{\"event\":\"COMPLETE_CQE\",\"userData\":%d,\"res\":%d,\"nsecs\":%lld}\n", args->user_data, args->res, nsecs);
+}

@@ -1,0 +1,4 @@
+tracepoint:io_uring:io_uring_queue_async_work
+{
+    printf("{\"event\":\"ASYNC_WORK\",\"userData\":%d,\"flags\":%d,\"ops\":\"%s\",\"nsecs\":%lld}\n", args->user_data, args->flags, str(args->op_str), nsecs);
+}
